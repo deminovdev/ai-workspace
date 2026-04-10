@@ -1,0 +1,62 @@
+{
+  "permissions": {
+    "allow": [
+      // ── Git (личное) ──────────────────────────────────────────
+      // git push в shared запрещён — добавь сюда если нужен
+      "Bash(git push:*)",
+
+      // ── Сеть ──────────────────────────────────────────────────
+      // SSH/SCP для деплоя или чтения удалённых серверов
+      "Bash(ssh:*)",
+      "Bash(scp:*)",
+      // curl — только безопасные методы; DELETE/PUT добавляй явно если нужно
+      "Bash(curl -X GET:*)",
+      "Bash(curl -X POST:*)",
+      "Bash(curl --head:*)",
+
+      // ── Стек: Go ──────────────────────────────────────────────
+      "Bash(make:*)",
+      "Bash(go build:*)",
+      "Bash(go test:*)",
+      "Bash(go run:*)",
+      "Bash(go vet:*)",
+      "Bash(go mod:*)",
+
+      // ── Стек: Node / TypeScript ───────────────────────────────
+      // "Bash(npm run:*)",
+      // "Bash(npm install:*)",
+      // "Bash(npx:*)",
+      // "Bash(pnpm:*)",
+
+      // ── Стек: Python ──────────────────────────────────────────
+      // "Bash(python:*)",
+      // "Bash(pip install:*)",
+      // "Bash(pytest:*)",
+      // "Bash(uv:*)",
+
+      // ── Стек: Rust ────────────────────────────────────────────
+      // "Bash(cargo:*)",
+
+      // ── Docker ────────────────────────────────────────────────
+      "Bash(docker compose:*)",
+      "Bash(docker build:*)",
+      "Bash(docker logs:*)",
+      "Bash(docker ps:*)",
+      "Bash(docker exec:*)",
+
+      // ── Утилиты ───────────────────────────────────────────────
+      "Bash(git clone:*)",
+      "Bash(chmod +x:*)",
+
+      // ── MCP-токены (добавь свои) ───────────────────────────────
+      // Токены в env не класть — используй внешний secrets manager
+      // или передавай через переменные окружения вне этого файла
+
+      // ── GitHub CLI ────────────────────────────────────────────
+      "Bash(gh repo:*)",
+      "Bash(gh pr:*)",
+      "Bash(gh issue:*)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}

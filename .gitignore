@@ -1,0 +1,25 @@
+# Claude Code local settings (personal: push, ssh, mcp tokens)
+.claude/settings.local.json
+
+# OpenCode local settings
+opencode.local.json
+
+# Worktrees and bare repos in tmp (managed by scripts)
+tmp/*
+!tmp/.gitkeep
+!tmp/README.md
+
+# Personal project memory files (added via /start, contain private project info)
+modules/memory/project_*.md
+
+# Runtime logs (session activity, personal)
+modules/memory/sessions.log
+modules/hooks/.stop.log
+modules/hooks/.notify.log
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

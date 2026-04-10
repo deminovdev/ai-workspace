@@ -1,0 +1,87 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/session-start.sh\""}]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/session-end.sh\""}]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/notification.sh\""}]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/pre-compact.sh\""}]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/stop.sh\""}]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/post-tool-use.sh\""}]
+      },
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/circuit-breaker.sh\" --record"}]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/velocity-governor.sh\""}]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/commit-guard.sh\""}]
+      },
+      {
+        "hooks": [{"type": "command", "command": "bash \"${CLAUDE_PROJECT_DIR}/modules/hooks/circuit-breaker.sh\" --check"}]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebSearch",
+      "WebFetch",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(wc:*)",
+      "Bash(date:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)",
+      "Bash(git diff:*)",
+      "Bash(git branch:*)",
+      "Bash(git add -p:*)",
+      "Bash(git add -u:*)",
+      "Bash(git commit:*)",
+      "Bash(git worktree:*)",
+      "Bash(git fetch:*)",
+      "Bash(osascript:*)",
+      "Bash(afplay:*)",
+      "Bash(alerter:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(sudo:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git clean:*)",
+      "Bash(docker system prune:*)"
+    ]
+  }
+}

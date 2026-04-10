@@ -1,0 +1,43 @@
+# lefthook.yml — шаблон git hooks
+# Установка: lefthook install
+# Документация: https://github.com/evilmartians/lefthook
+
+pre-commit:
+  parallel: true
+  commands:
+    # Раскомментируй нужное под свой стек
+
+    # Go
+    # lint:
+    #   glob: "*.go"
+    #   run: golangci-lint run ./...
+    # build:
+    #   glob: "*.go"
+    #   run: go build ./...
+
+    # TypeScript / JavaScript
+    # eslint:
+    #   glob: "*.{ts,tsx,js,jsx}"
+    #   run: eslint {staged_files}
+    # format:
+    #   glob: "*.{ts,tsx}"
+    #   run: biome format --write {staged_files}
+    # typecheck:
+    #   glob: "*.{ts,tsx}"
+    #   run: tsc --noEmit
+
+    # Python
+    # ruff:
+    #   glob: "*.py"
+    #   run: ruff check {staged_files}
+
+pre-push:
+  parallel: true
+  commands:
+    # Go
+    # test:
+    #   run: go test ./...
+
+    # TypeScript
+    # vitest:
+    #   run: vitest run
