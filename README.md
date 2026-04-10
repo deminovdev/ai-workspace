@@ -2,6 +2,10 @@
   <img src="modules/hooks/icon.png" width="100" alt="ai-workspace" />
   <h1>ai-workspace</h1>
   <p><strong>Work above your projects, not inside them.</strong></p>
+  <p>
+    <a href="https://github.com/deminovdev/ai-workspace/stargazers"><img src="https://img.shields.io/github/stars/deminovdev/ai-workspace?style=flat-square" alt="stars" /></a>
+    <img src="https://img.shields.io/badge/Claude_Code-compatible-orange?style=flat-square" alt="Claude Code compatible" />
+  </p>
 </div>
 
 A workspace layer that turns Claude Code from an autocomplete into a team. Agents with enforced permissions run in parallel across repositories. You orchestrate.

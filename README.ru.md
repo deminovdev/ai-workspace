@@ -2,6 +2,10 @@
   <img src="modules/hooks/icon.png" width="100" alt="ai-workspace" />
   <h1>ai-workspace</h1>
   <p><strong>Работай над проектами, а не внутри них.</strong></p>
+  <p>
+    <a href="https://github.com/deminovdev/ai-workspace/stargazers"><img src="https://img.shields.io/github/stars/deminovdev/ai-workspace?style=flat-square" alt="stars" /></a>
+    <img src="https://img.shields.io/badge/Claude_Code-compatible-orange?style=flat-square" alt="Claude Code compatible" />
+  </p>
 </div>
 
 Слой workspace превращает Claude Code из автодополнения в команду. Агенты с реальными ограничениями по правам работают параллельно в разных репозиториях. Ты координируешь.
