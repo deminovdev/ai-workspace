@@ -117,8 +117,12 @@ bash modules/scripts/install-shell-tools.sh --ide goland  # или cursor, code
 
 ## Документация
 
-- [Инструкция по установке](SETUP.md)
-- [Паттерн: оркестратор](docs/patterns/orchestrator.md)
-- [Паттерн: изолированный агент](docs/patterns/worktree-agent.md)
-- [Паттерн: loop monitor](docs/patterns/loop-monitor.md)
-- [Workflow](WORKFLOW.md)
+**[→ Wiki](https://github.com/deminovdev/ai-workspace/wiki)**
+
+| Страница | Содержание |
+|---|---|
+| [Getting Started](https://github.com/deminovdev/ai-workspace/wiki/Getting-Started) | Установка за 5 минут: clone, settings, /start |
+| [Commands](https://github.com/deminovdev/ai-workspace/wiki/Commands) | Справочник команд: /start, /research, /dev, /review |
+| [Agents](https://github.com/deminovdev/ai-workspace/wiki/Agents) | Встроенные агенты, как добавить своего |
+| [Patterns](https://github.com/deminovdev/ai-workspace/wiki/Patterns) | Оркестратор и изолированный агент |
+| [Roles](https://github.com/deminovdev/ai-workspace/wiki/Roles) | Backend, Frontend, QA, Team Lead, Product |

@@ -106,8 +106,12 @@ Works with Claude Code and OpenCode. `AGENTS.md` is read by both. Agents are mir
 
 ## Docs
 
-- [Setup guide](SETUP.md)
-- [Orchestrator pattern](docs/patterns/orchestrator.md)
-- [Worktree agent pattern](docs/patterns/worktree-agent.md)
-- [Loop monitor pattern](docs/patterns/loop-monitor.md)
-- [Workflow](WORKFLOW.md)
+**[→ Wiki](https://github.com/deminovdev/ai-workspace/wiki)**
+
+| Page | Contents |
+|---|---|
+| [Getting Started](https://github.com/deminovdev/ai-workspace/wiki/Getting-Started) | Setup in 5 minutes: clone, settings, /start |
+| [Commands](https://github.com/deminovdev/ai-workspace/wiki/Commands) | Command reference: /start, /research, /dev, /review |
+| [Agents](https://github.com/deminovdev/ai-workspace/wiki/Agents) | Built-in agents, how to add your own |
+| [Patterns](https://github.com/deminovdev/ai-workspace/wiki/Patterns) | Orchestrator and isolated agent patterns |
+| [Roles](https://github.com/deminovdev/ai-workspace/wiki/Roles) | Backend, Frontend, QA, Team Lead, Product |
