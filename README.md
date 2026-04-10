@@ -49,7 +49,7 @@ claude tmp/backend-feature-auth
 ## Quick start
 
 ```bash
-git clone https://github.com/deminov/ai-workspace
+git clone https://github.com/deminovdev/ai-workspace
 cd ai-workspace
 
 # Personal settings (git push, ssh keys, MCP tokens)

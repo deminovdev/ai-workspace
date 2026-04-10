@@ -23,7 +23,7 @@ Optional but recommended:
 ## 1. Clone
 
 ```bash
-git clone https://github.com/deminov/ai-workspace
+git clone https://github.com/deminovdev/ai-workspace
 cd ai-workspace
 ```
 

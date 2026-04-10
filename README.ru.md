@@ -49,7 +49,7 @@ claude tmp/backend-feature-auth
 ## Быстрый старт
 
 ```bash
-git clone https://github.com/deminov/ai-workspace
+git clone https://github.com/deminovdev/ai-workspace
 cd ai-workspace
 
 # Личные настройки (git push, ssh-ключи, MCP-токены)
