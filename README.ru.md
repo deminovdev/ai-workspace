@@ -1,6 +1,8 @@
-# ai-workspace
-
-**Работай над проектами, а не внутри них.**
+<div align="center">
+  <img src="modules/hooks/icon.png" width="100" alt="ai-workspace" />
+  <h1>ai-workspace</h1>
+  <p><strong>Работай над проектами, а не внутри них.</strong></p>
+</div>
 
 Слой workspace превращает Claude Code из автодополнения в команду. Агенты с реальными ограничениями по правам работают параллельно в разных репозиториях. Ты координируешь.
 

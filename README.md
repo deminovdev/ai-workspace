@@ -1,6 +1,8 @@
-# ai-workspace
-
-**Work above your projects, not inside them.**
+<div align="center">
+  <img src="modules/hooks/icon.png" width="100" alt="ai-workspace" />
+  <h1>ai-workspace</h1>
+  <p><strong>Work above your projects, not inside them.</strong></p>
+</div>
 
 A workspace layer that turns Claude Code from an autocomplete into a team. Agents with enforced permissions run in parallel across repositories. You orchestrate.
 
