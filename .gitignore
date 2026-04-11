@@ -12,6 +12,9 @@ tmp/*
 # Personal project memory files (added via /start, contain private project info)
 modules/memory/project_*.md
 
+# Post drafts (work in progress, not ready to publish)
+docs/posts/
+
 # Runtime logs (session activity, personal)
 modules/memory/sessions.log
 modules/hooks/.stop.log
