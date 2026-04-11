@@ -37,24 +37,36 @@ ai-workspace/
 > Этот раздел заполняется автоматически через `/start`.
 > Не редактируй вручную — `/start` соберёт контекст и пропишет структуру, команды и навигацию.
 
-<!-- Пример после /start:
+### kuznec — BPM AI Platform
 
-### my-service — Краткое описание
-Что делает проект, для кого.
+SaaS для моделирования организаций через AI-интервью. Строит Enterprise Knowledge Graph и генерирует проекции: регламенты, BPMN, 1С, бюджет. Для COO среднего бизнеса (50–500 чел.).
 
-**Стек:** Go + PostgreSQL + Redis
+**Стек:** Go (Fiber) + React 19 (Vite/TS/shadcn/Tailwind v4) + Neo4j + PostgreSQL + Redis + Claude Sonnet
+
+**Изолированная задача (worktree):**
+```bash
+bash modules/scripts/worktree-add.sh git@github.com:Deminoff/kuznec.git <task> main
+# агент работает в tmp/kuznec-<task> через Agent(isolation:"worktree") или /dev
+```
 
 **Запуск:**
 ```bash
-make dev
-make test
+cd tmp/kuznec/app && docker compose up -d
+cd backend && go run ./cmd/server
+cd frontend && npm run dev
+cd backend && go test ./...
+make seed
 ```
 
 **Навигация:**
-- Код → `tmp/my-service/internal/`
-- Задачи → `tmp/my-service/tasks/todo.md`
+- Workspace → `tmp/kuznec/`
+- Код → `tmp/kuznec/app/`
+- Ресёрч / онтология → `tmp/kuznec/research/`
+- Инфра → `tmp/kuznec/infra/`
+- Задачи → `tmp/kuznec/app/tasks/todo.md`
+- ADR → `tmp/kuznec/app/docs/adr/`
 
--->
+**Агенты проекта:** `backend`, `frontend`, `product`, `qa` (в kuznec/.claude и app/.claude)
 
 ---
 
